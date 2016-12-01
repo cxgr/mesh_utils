@@ -126,6 +126,9 @@ namespace MeshUtils
                 }
                 else
                     Selection.activeGameObject = CreatePivotObj();
+
+                if (Tool.Move != Tools.current)
+                    Tools.current = Tool.Move;
             }
         }
 
